@@ -247,5 +247,43 @@ Because all one-hot categories were retained in the preprocessing pipeline, the 
 - Matplotlib
 - Jupyter Notebook
 
+- ## How to Run
+
+1. Download the 2024 NSDUH public-use TSV bundle from SAMHSA.
+2. Place the ZIP file in your local Downloads folder, or update the `zip_path` variable in the notebook.
+3. Open `nsduh_pain_reliever_misuse_analysis.ipynb` in Jupyter Notebook.
+4. Run the notebook from top to bottom.
+
+The analysis expects the official NSDUH ZIP file:
+
+`NSDUH-2024-DS0001-bndl-data-tsv_v1.zip`
+
+---
+
+## Limitations
+
+- NSDUH is cross-sectional, so associations cannot be interpreted as causal.
+- The target is rare, making minority-class prediction difficult.
+- Survey weights were retained for descriptive analysis but were not used as ordinary model predictors.
+- The machine-learning models are not presented as nationally representative clinical prediction tools.
+- Feature selection was targeted rather than exhaustive across all 2,600+ available variables.
+- Several behavioral-health predictors may contain overlapping information.
+- The test partition was examined during iterative model development, so reported test metrics should be treated as development evidence rather than a pristine untouched final performance estimate.
+- This model is **not intended for clinical screening, diagnosis, treatment decisions, or individual-level risk assessment**.
+
+---
+
+## Future Work
+
+Future versions of this project may:
+
+- conduct a broader codebook-guided feature search
+- evaluate additional behavioral-health and healthcare predictors
+- compare alternative feature-selection methods
+- use repeated stratified or nested cross-validation
+- reserve a fresh final holdout for unbiased performance estimation
+- explore calibrated probabilities
+- create a Power BI dashboard or presentation
+
 ---
 
