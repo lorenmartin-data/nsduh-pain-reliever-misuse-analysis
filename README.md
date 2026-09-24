@@ -53,6 +53,10 @@ https://www.samhsa.gov/data/data-we-collect/nsduh-national-survey-drug-use-and-h
 
 The raw NSDUH dataset is not included in this repository. The notebook is designed to read the official 2024 public-use TSV bundle after it is downloaded locally.
 
+## Analysis Notebook
+
+[View the full analysis notebook](Notebook.ipynb)
+
 ### Analytical Sample
 
 - Full public-use file: **58,633 respondents**
@@ -225,6 +229,9 @@ These coefficients should be interpreted as **model contributions**, not causal 
 Because all one-hot categories were retained in the preprocessing pipeline, the coefficients are not presented as conventional reference-category odds ratios.
 
 ---
+## Project Report
+
+[View the full project report](Report.pdf)
 
 ## Project Visuals
 
