@@ -28,6 +28,19 @@ This project demonstrates:
 
 **Which selected demographic, socioeconomic, health, mental-health, and substance-use characteristics are associated with past-year prescription pain-reliever misuse, and how effectively can classification models distinguish respondents who report misuse from those who do not?**
 
+## Report and Current Status
+
+A business-facing project report is included to summarize the analytical objective, methodology, key findings, model performance, limitations, and recommended next steps.
+
+The current analysis identified several meaningful patterns, particularly among substance-use and behavioral-health variables. Methamphetamine use disorder and cocaine use disorder emerged as two of the strongest model contributors, while nicotine dependence, marijuana use disorder, alcohol use disorder, psychological distress, and functional impairment also provided useful signal.
+
+However, the modeling results should be considered **development-stage rather than final predictive performance**.
+
+The expanded logistic regression improved on earlier model versions and outperformed the random forest on several evaluation metrics, but positive-class performance remained limited. At the selected threshold, recall was approximately 27% and precision approximately 18%, meaning that many respondents reporting past-year prescription pain-reliever misuse were still not identified and a substantial proportion of positive predictions were false positives.
+
+Because of these limitations, the current model is best viewed as evidence that the selected features contain useful classification signal rather than as a finished prediction system.
+
+This project is therefore considered complete as a first portfolio version, while the analytical findings remain open to refinement through additional feature exploration, stronger validation methods, and future model development.
 ---
 
 ## Data Source
