@@ -249,17 +249,3 @@ Because all one-hot categories were retained in the preprocessing pipeline, the 
 
 ---
 
-## Repository Structure
-
-```text
-nsduh-pain-reliever-misuse-analysis/
-│
-├── README.md
-├── nsduh_prescription_pain_reliever_misuse_analysis.ipynb
-├── outputs/
-│   ├── pain_relief_misuse_by_substance_condition.png
-│   ├── pain_relief_misuse_by_substance_risk_count.png
-│   ├── model_performance_comparison.png
-│   ├── logistic_regression_top_coefficients.png
-│   └── logistic_regression_confusion_matrix.png
-└── requirements.txt
